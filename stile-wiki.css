@@ -1,7 +1,7 @@
 body {
     font-size: 110%;
     flex-wrap: 1;
-    background-image: url(sfondo.jpg);/*dovremmo togliere la faccia di scotti*/
+    background-image: url(sfondo.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
