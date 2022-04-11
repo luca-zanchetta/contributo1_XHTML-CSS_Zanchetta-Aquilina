@@ -1,0 +1,197 @@
+div.center-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(233, 233, 233, 0.767);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 24px;
+}
+
+div.title {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: black;
+    color: whitesmoke;
+}
+div.menu-list { 
+    display: flex;
+    flex-direction: row;
+}
+div.menu-voice {
+    text-align: center;
+    min-width:10%;
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+div.text-container {
+    font-family: helvetica,arial,sans-serif;
+    position: relative;
+    padding: 0.3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    font-size: 1.1em; 
+}
+div.dropdown-content {
+    display: none;
+    position: relative;
+    background-color:rgba(185, 185, 185, 0.774);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.menu-voice:hover{
+    background-color: rgba(185, 185, 185, 0.774);
+}
+.menu-voice:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    justify-content: right;
+    width: 100%;
+}
+
+.floating-image {
+    font-size: 0.8em;
+    background-color: #D4D4D4;
+    border: 2px solid #CCCCCC;
+    float: right;
+    clear: right;
+    margin: 0;
+}
+
+body {
+    font-size: 110%;
+    flex-wrap: 1;
+    background-image: url(sfondo.jpg);/*dovremmo togliere la faccia di scotti*/
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.5em;
+}
+
+.wiki-logo {
+    float: left;
+    clear: left;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.tab-index {
+    clear:left;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    border: 1px solid #919191;
+    float: left;
+    width: auto;
+}
+
+.tab-title {
+    min-width: 140px;
+    border-bottom: 1px solid #919191;
+
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: list-item;
+    list-style: none;
+}
+li:hover {
+    background-color: rgba(0, 191, 255, 0.72);
+    border-radius: 24px;
+}
+li.no-color:hover {
+    background-color: #ffffff00;
+}
+
+.index-n { 
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+}
+#icon {
+    clear: left;
+    display: inline;
+    height: 12px;
+    min-width: 12px;
+    width: 12px;
+}
+
+a.link{
+    all: inherit;
+    margin: 0;
+}
+
+div.box {
+    position:relative;
+    margin-left:2%;
+    margin-right:2%;
+    color:black;
+    margin-bottom: 15ex;
+    margin-top: 5ex;
+    flex:1;
+    min-width: 10%;
+}
+
+a.menu {
+    color:white;
+    text-decoration: none;
+}
+
+img.box {
+    width:21em;
+    height:15em;
+    min-width:10%;
+    min-height:10%;
+}
+
+@media only screen and (max-width: 767px) {
+    div.flex {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 3;
+        min-width: 10%;
+    }
+}
+
+div.flex {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 3;
+}
+
+div.scritta {
+    background-color:aliceblue;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 150%;
+    position: relative;
+    margin-top: -13%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    justify-content: center;
+}
+.text {
+    resize: auto;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+}

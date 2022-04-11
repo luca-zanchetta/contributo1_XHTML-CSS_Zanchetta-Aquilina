@@ -1,0 +1,224 @@
+body {
+    font-size: 110%;
+    flex-wrap: 1;
+    background-image: url(sfondo.jpg);/*dovremmo togliere la faccia di scotti*/
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.5em;
+}
+/*Contiene tutto il sito, realizza il blocco semi trasparente bianco*/
+div.center-block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(233, 233, 233, 0.767);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 24px;
+}
+/*=================================================
+====================TITOLO========================
+/*================================================*/
+/*Classe del navigatore della wiki(blocco nero in alto)*/
+div.title {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: black;
+    color: whitesmoke;
+}
+/*Flex box esterna contente le voci del menu*/
+div.menu-list { 
+    display: flex;
+    flex-direction: row;
+}
+/*Flex box contente la singola voce*/
+div.menu-voice {
+    text-align: center;
+    min-width:10%;
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+/*Classe per i blocchi del menu a tendina*/
+div.dropdown-content {
+    display: none;
+    position: relative;
+    background-color:rgba(185, 185, 185, 0.774);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px 0px 24px 24px;
+}
+
+.menu-voice:hover{
+    background-color: rgba(185, 185, 185, 0.774);
+}
+.menu-voice:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    justify-content: right;
+    width: 100%;
+}
+
+/*classe che definisce le regole dei titoli dentro la classe menu-voice*/
+.text {
+    resize: auto;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+}
+.wiki-logo {
+    float: left;
+    clear: left;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+/*================================================
+====================BLOCCO CENTRALE===============
+/*================================================*/
+/*contiene il secondo blocco della wiki, sotto il titolo*/
+div.text-container {
+    font-family: helvetica,arial,sans-serif;
+    position: relative;
+    padding: 0.3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 2em;
+    font-size: 1.1em; 
+}
+/*quoted text*/
+div.quoted-text-container {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+}
+div.quote-left{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 3.3em;
+    padding-left: 15%;
+    text-align: center;
+    max-width: 10%;
+    min-width:5%;
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+div.quote-right{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 3.3em;
+    padding-right: 15%;
+    text-align: center;
+    max-width: 10%;
+    min-width:5%;
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+div.quoted-text {
+    font-style: italic;
+    padding-right: 1%;
+    padding-left: 1%;
+    text-align: center;
+    min-width:30%;
+    position: relative;
+    display: inline-block;
+    flex: 1;
+}
+/*immagine nella cornice*/
+.floating-image-right {
+    max-width: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-size: 0.8em;
+    background-color: #D4D4D4;
+    border: 2px solid #CCCCCC;
+    float: right;
+    clear: right;
+}
+.floating-image-left {
+    max-width: 30%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    font-size: 0.8em;
+    background-color: #D4D4D4;
+    border: 2px solid #CCCCCC;
+    float: left;
+    clear: left;
+}
+/**/
+.figure-title {
+    background-color: rgb(84, 77, 77);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.figure-text {
+    text-align: center;
+    font-size: 1.3em;
+}
+/*Classi che realizzano l'indice*/
+.tab-index {
+    margin-right: 1%;
+    clear:left;
+    border: 1px solid #919191;
+    float: left;
+}
+
+.tab-title {
+    min-width: 140px;
+    border-bottom: 1px solid #919191;
+
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: list-item;
+    list-style: none;
+}
+li:hover {
+    background-color: rgba(0, 191, 255, 0.72);
+    border-radius: 24px;
+}
+li.no-color:hover {
+    background-color: #ffffff00;
+}
+
+.index-n { 
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+}
+#icon {
+    clear: left;
+    display: inline;
+    height: 12px;
+    min-width: 12px;
+    width: 12px;
+}
+
+a.link{
+    all: inherit;
+    margin: 0;
+}
