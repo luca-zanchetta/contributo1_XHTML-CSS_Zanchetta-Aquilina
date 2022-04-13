@@ -1,3 +1,4 @@
+/*Contiene tutto il sito, realizza il blocco semi trasparente bianco*/
 div.center-block {
     display: flex;
     flex-direction: column;
@@ -6,17 +7,19 @@ div.center-block {
     margin-right: 10%;
     border-radius: 24px;
 }
-
+/*Classe del navigatore della wiki(blocco nero in alto)*/
 div.title {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     background-color: black;
     color: whitesmoke;
 }
+/*Flex box esterna contente le voci del menu*/
 div.menu-list { 
     display: flex;
     flex-direction: row;
 }
+/*Flex box contente la singola voce*/
 div.menu-voice {
     text-align: center;
     min-width:10%;
@@ -24,6 +27,7 @@ div.menu-voice {
     display: inline-block;
     flex: 1;
 }
+/*contiene il secondo blocco della wiki, sotto il titolo*/
 div.text-container {
     font-family: helvetica,arial,sans-serif;
     position: relative;
@@ -33,6 +37,7 @@ div.text-container {
     margin-top: 2em;
     font-size: 1.1em; 
 }
+/*Classe per i blocchi del menu a tendina*/
 div.dropdown-content {
     display: none;
     position: relative;
@@ -72,7 +77,12 @@ body {
     background-attachment: fixed;
     line-height: 1.5em;
 }
-
+/*classe che definisce le regole dei titoli dentro la classe menu-voice*/
+.text {
+    resize: auto;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+}
 .wiki-logo {
     float: left;
     clear: left;
@@ -134,7 +144,7 @@ a.link {
     cursor: pointer;
     margin: 0;
 }
-
+/*Singolo box in cui c'è l'immagine*/
 div.box {
     position:relative;
     margin-left:2%;
@@ -150,31 +160,21 @@ a.menu {
     color:white;
     text-decoration: none;
 }
-
+/*Immagine nel box*/
 img.box {
     width: 100%;
     height: 100%;
     min-width:10%;
     min-height:10%;
 }
-
-@media only screen and (max-width: 767px) {
-    div.flex {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 3;
-        min-width: 10%;
-    }
-}
-
+/*Realizza lo stile delle immagini in riga*/
 div.flex {
     position: relative;
     display: flex;
     flex-direction: row;
     flex-shrink: 3;
 }
-
+/*Stile del testo sulle immagini*/
 div.scritta {
     background-color:aliceblue;
     color:black;
@@ -190,9 +190,4 @@ div.scritta {
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     justify-content: center;
-}
-.text {
-    resize: auto;
-    flex-shrink: 1;
-    overflow-wrap: break-word;
 }
