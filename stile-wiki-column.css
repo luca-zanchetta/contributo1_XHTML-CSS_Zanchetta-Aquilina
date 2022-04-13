@@ -1,9 +1,10 @@
 /*aggiunta per potenziale terza pagina*/
 /*contenitore esterno di tutta la colonna*/
 div.center-column {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 20%;
     margin-right: 20%;
+    margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -54,6 +55,7 @@ div.card-title {
 div.card-body {
     margin-top: 5%;
     overflow: hidden;
+    font-weight: bold;
 }
 /*Stile del separatore tra titolo e testo */
 hr.card-line {
@@ -63,10 +65,27 @@ hr.card-line {
 div.column-foot{
     padding-left: 7%;
 }
-/*non funzionano*/
-.card-tile:hover {
+/*regole per i link*/
+a.link {
+    all: inherit;
+    cursor: pointer;
+    margin: 0;
+}
+a.news {
+    all: inherit;
+    cursor: pointer;
+}
+/*regole per cambiare colore alla scritta e alla riga, quando ci si passa con il cursore*/
+.card-title:hover {
     color: aqua;
+    
 }
 .card-title:hover hr.card-line{
-    color: white;
+    background-color: white;
+}
+/*Titolo*/
+h1.titolo {
+    text-align: center; 
+    color:red; 
+    font-weight: bold;
 }

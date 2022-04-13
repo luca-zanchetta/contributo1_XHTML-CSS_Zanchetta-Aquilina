@@ -129,8 +129,9 @@ li.no-color:hover {
     width: 12px;
 }
 
-a.link{
+a.link {
     all: inherit;
+    cursor: pointer;
     margin: 0;
 }
 

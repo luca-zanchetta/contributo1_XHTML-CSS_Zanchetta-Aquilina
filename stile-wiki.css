@@ -220,5 +220,11 @@ li.no-color:hover {
 
 a.link{
     all: inherit;
+    cursor: pointer;
     margin: 0;
+}
+
+a.menu {
+    color:white;
+    text-decoration: none;
 }
