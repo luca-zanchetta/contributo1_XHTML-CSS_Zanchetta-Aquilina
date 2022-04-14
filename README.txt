@@ -8,9 +8,11 @@ Indirizzo del repository:
 	https://github.com/luca-zanchetta/contributo1_XHTML-CSS_Zanchetta-Aquilina
 
 Indirizzo web del sito nel server lweb:
-   http://lweb.diag.uniroma1.it/~lweb44/BRIDGE/contributo1_XHTML-CSS_Zanchetta-Aquilina-main/
+   (Account Lweb Zanchetta)http://lweb.diag.uniroma1.it/~lweb44/BRIDGE/contributo1_XHTML-CSS_Zanchetta-Aquilina-main/
+   (Account Lweb Aquilina) http://lweb.diag.uniroma1.it/~lweb3/bridge-contributo_1-Zanchetta-Aquilina/
 Prima pagina visitabile:
    http://lweb.diag.uniroma1.it/~lweb44/BRIDGE/contributo1_XHTML-CSS_Zanchetta-Aquilina-main/homepage.html
+   http://lweb.diag.uniroma1.it/~lweb3/bridge-contributo_1-Zanchetta-Aquilina/homepage.html
 ==========================================================================================================
 				DESCRIZIONE DEL LAVORO SVOLTO:
 
