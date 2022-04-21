@@ -43,3 +43,7 @@ linee, le seguenti:
 - creazione di blocchi "non spinosi" contenenti testo o risorse web;
 - realizzazione di elementi "box".
 ==========================================================================================================
+
+---
+> ok, tanto per aggiungere qualcosa ...
+> mt
