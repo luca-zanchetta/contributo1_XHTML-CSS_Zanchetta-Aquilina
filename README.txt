@@ -46,4 +46,5 @@ linee, le seguenti:
 
 ---
 > ok, tanto per aggiungere qualcosa ...
+> magari questo readme potrebbe essere in markdown, invece che in txt. Ma va bene cosi'. Semmai pensateci per i prossimi homework.
 > mt
